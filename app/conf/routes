@@ -9,6 +9,8 @@ POST	/appForm								ApplicationForm.formPosted
 GET 	/tc										TermsAndConditions.index
 GET 	/login									Login.index
 GET 	/admin_list								ApplicationList.index
+GET		/admin_app								ApplicationList.index
+GET		/admin_app/{id}							ApplicationViewApp.index
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

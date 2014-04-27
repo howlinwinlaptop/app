@@ -1,5 +1,7 @@
 package models;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import play.db.jpa.Model;
@@ -20,7 +22,8 @@ public class ApplicationFormModel extends Model {
 	
 	public ApplicationFormModel(String fname, String lname, String lastKnownStreet,
 			String city, String state, String zip, String dob, String dod,
-			String ssn) {
+			String ssn) 
+	{
 		super();
 		this.fname = fname;
 		this.lname = lname;
@@ -31,6 +34,11 @@ public class ApplicationFormModel extends Model {
 		this.dob = dob;
 		this.dod = dod;
 		this.ssn = ssn;
+	}
+	
+	public static ApplicationFormModel findById(long id)
+	{
+		return find("byId", id).first();
 	}
 
 }

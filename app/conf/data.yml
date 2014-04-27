@@ -2,7 +2,6 @@ User(marion):
     email: marion@howlin.com
     password: secret
 
-
 User(georgina):
     email: georgina@howlin.com
     password: secret
@@ -11,3 +10,35 @@ User(pat):
     email: pat@howlin.com
     password: secret
 
+ApplicationFormModel(one):
+    fname: Peter
+    lname: Rabbit
+    lastKnownStreet: Cullenstown Duncormick
+    city: Wexford
+    state: Leinster
+    zip: IEWX
+    dob: 11/11/1950
+    dod: 11/11/2099
+    ssn: 123456789c
+
+ApplicationFormModel(two):
+    fname: Moon
+    lname: Face
+    lastKnownStreet: Cullenstown Duncormick
+    city: Wexford
+    state: Leinster
+    zip: IEWX
+    dob: 31/04/1955
+    dod: 31/04/2099
+    ssn: 123456789c
+
+ApplicationFormModel(three):
+    fname: Angry
+    lname: Pixie
+    lastKnownStreet: Cullenstown Duncormick
+    city: Wexford
+    state: Leinster
+    zip: IEWX
+    dob: 31/04/1955
+    dod: 31/04/2099
+    ssn: 123456789c

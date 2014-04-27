@@ -10,7 +10,8 @@ import models.*;
 public class ApplicationList extends Controller {
 
     public static void index() {
-        render();
+        List<ApplicationFormModel> applications = ApplicationFormModel.findAll();
+    	render(applications);
     }
 
 }

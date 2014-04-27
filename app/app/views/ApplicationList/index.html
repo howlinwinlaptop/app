@@ -1,6 +1,30 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title:'Application List' /}
 
 <div class="container">
-	Home
+	<table class="table table-striped table-hover">
+		<thead>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>SSN</td>
+			<td>City</td>
+			<td>State</td>
+			<td>Date of Birth</td>
+			<td>Date of Death</td>
+			<td></td>
+		</thead>
+
+		#{list items:applications, as:'application' }
+	        <tr>
+	        	<td>${application.fname}</td>
+	        	<td>${application.lname}</td>
+	        	<td>${application.ssn}</td>
+	        	<td>${application.city}</td>
+	        	<td>${application.state}</td>
+	        	<td>${application.dob}</td>
+	        	<td>${application.dod}</td>
+	        	<td><a href="/admin_app/${application.id}">View Application</a></td>
+	        </tr>
+	    #{/list}
+	</table>
 </div>
