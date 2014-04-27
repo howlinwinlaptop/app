@@ -2,5 +2,18 @@
 #{set title:'Login' /}
 
 <div class="container">
-	Login
+	    <h4>Log in using your E-mail account</h4>
+	     
+	    <form action="/login/authenticate" method="POST">
+	      <div class="control-group">
+	        <div class="controls">
+	          <label class="control-label">  Email: </label>
+	          <input placeholder="Email" type="text" name="email" >
+	          <label class="control-label">  Password: </label>
+	          <input placeholder="Password" type="password" name='Password">
+	        </div>
+	        <button type="submit" class="btn btn-primary"> Login  </button>
+	      </div>
+	    </form>
+	</div>
 </div>
