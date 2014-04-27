@@ -12,6 +12,10 @@ GET 	/admin_list								ApplicationList.index
 GET		/admin_app								ApplicationList.index
 GET		/admin_app/{id}							ApplicationViewApp.index
 
+GET /logout									  	Application.index
+POST /login/authenticate                      	login.authenticate
+POST /account/register                        	login.register
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

@@ -28,7 +28,7 @@ public class Login extends Controller {
       {
         Logger.info("Authentication successful");
         session.put("logged_in_userid", user.id);
-        index();
+        ApplicationList.index();
       }
       else
       {
