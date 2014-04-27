@@ -4,6 +4,9 @@
 
 # Home page
 GET     /                                       Application.index
+GET 	/appForm								ApplicationForm.index
+GET 	/tc										TermsAndConditions.index
+GET 	/login									Login.index
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

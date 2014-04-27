@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <title>#{get 'title' /}</title>
         <meta charset="${_response_encoding}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        <link rel="stylesheet" media="screen" href="@{'/public/bootstrap/css/bootstrap.min.css'}">
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
         <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
         #{get 'moreScripts' /}
     </head>
     <body>
-        #{doLayout /}
+      
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <a class="navbar-brand" href="#">SunLife App</a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/appForm">Application Form</a></li>
+                        <li><a href="/tc">Terms and Conditions</a></li>
+                        <li><a href="/login">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container" role="main">
+            #{doLayout /}
+        </div>
+
+        <script src="@{'/public/bootstrap/js/bootstrap.js'}" type="text/javascript" charset="${_response_encoding}"></script>
     </body>
 </html>
