@@ -5,6 +5,7 @@
 # Home page
 GET     /                                       Application.index
 GET 	/appForm								ApplicationForm.index
+POST	/appForm								ApplicationForm.formPosted
 GET 	/tc										TermsAndConditions.index
 GET 	/login									Login.index
 
