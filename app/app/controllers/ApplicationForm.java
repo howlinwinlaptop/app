@@ -9,8 +9,16 @@ import models.*;
 
 public class ApplicationForm extends Controller {
 
-    public static void index() {
+    public static void index() 
+    {
         render();
     }
 
+    public static void formPosted(String fname, String lname, String lastKnownStreet,
+    								String city, String state, String zip, String dob, 
+    								String dod, String ssn) 
+    {
+    	
+    	render();
+    }
 }
