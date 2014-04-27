@@ -1,0 +1,13 @@
+User(marion):
+    email: marion@howlin.com
+    password: secret
+
+
+User(georgina):
+    email: georgina@howlin.com
+    password: secret
+
+User(pat):
+    email: pat@howlin.com
+    password: secret
+
