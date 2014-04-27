@@ -9,8 +9,9 @@ import models.*;
 
 public class ApplicationViewApp extends Controller {
 
-    public static void index() {
-        
+    public static void index(Long id) {
+        ApplicationFormModel application = ApplicationFormModel.findById(id);
+        render(application);
     }
 
 }

@@ -1,0 +1,66 @@
+#{extends 'main.html' /}
+#{set title:'Application List' /}
+
+<div class="container">
+	<p>
+		<a href="/admin_list">Back</a>
+	</p>
+	<table class="table table-striped table-hover">
+		<tr>
+			<td>
+				<b>First Name:</b>
+			</td>
+			<td>${application.fname}</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Last Name:</b>
+			</td>
+			<td>${application.lname}</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Last Known Street:</b>
+			</td>
+			<td>${application.lastKnownStreet}</td>
+		</tr>
+		<tr>
+			<td>
+				<b>City: </b>
+			</td>
+			<td>${application.city}</td>
+		</tr>
+		<tr>
+			<td>
+				<b>State:</b>
+			</td>
+			<td>${application.state}</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Zip:</b>
+			</td>
+			<td>${application.zip}</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Date of Birth:</b>
+			</td>
+			<td>${application.dob}</td>
+		</tr>
+		<tr>
+			<td>
+				<b>Date of Death:</b>
+			</td>
+			<td>${application.dod}</td>
+		</tr>
+		<tr>
+			<td>
+				<b>SSN: </b>
+			</td>
+			<td>${application.ssn}</td>
+		</tr>
+	</table>
+
+	<a href="#" onclick="alert('This person was not found')">Check DMF for this person</a>
+</div>
