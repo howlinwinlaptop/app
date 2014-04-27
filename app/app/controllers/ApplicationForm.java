@@ -18,7 +18,8 @@ public class ApplicationForm extends Controller {
     								String city, String state, String zip, String dob, 
     								String dod, String ssn) 
     {
+    	ApplicationFormModel appForm = new ApplicationFormModel(fname, lname, lastKnownStreet, city, state, zip, dob, dod, ssn);
+    	appForm.save();
     	
-    	render();
     }
 }
